@@ -5,3 +5,4 @@ django-debug-toolbar==3.7.0
 sqlparse==0.4.3
 dj-config-url~=0.1.1
 psycopg2==2.9.5
+whitenoise==6.2.0
