@@ -90,7 +90,7 @@ DATABASES = {
 }
 
 # dj-database-url
-db_from_env = dj_database_url.config(conn_max_age=500)  # env variable -> DATABASE_URL
+db_from_env = dj_database_url.config(conn_max_age=500, ssl_require=True)  # env variable -> DATABASE_URL
 DATABASES["default"].update(db_from_env)
 
 # Password validation
@@ -129,11 +129,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 STATICFILES_DIRS = (BASE_DIR / "static",)
 
-STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
