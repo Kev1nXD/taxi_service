@@ -7,7 +7,7 @@ Project was deployed on [Heroku](https://taxi-service-kevin.herokuapp.com/accoun
 
 Guest account credentials:
 * Username: Guest
-* password: Anonymous1234
+* Password: Anonymous1234
 
 ## Installation
 
