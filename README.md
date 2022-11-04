@@ -9,6 +9,15 @@ Guest account credentials:
 * Username: Guest
 * Password: Anonymous1234
 
+## Features
+
+* Authentication functionality for Driver/User
+* Managing drivers, cars, manufacturers with website interface
+* Powerful admin panel for advanced managing
+
+## Demo
+![Website Homepage](demo.png)
+
 ## Installation
 
 Python3 is required
@@ -32,12 +41,3 @@ and log in with credentials you inserted on log in page:
 ```shell
 python manage.py createsuperuser
 ```
-
-## Features
-
-* Authentication functionality for Driver/User
-* Managing drivers, cars, manufacturers with website interface
-* Powerful admin panel for advanced managing
-
-## Demo
-![Website Homepage](demo.png)

@@ -29,7 +29,9 @@
               {{ manufacturer.id }}
           </td>
           <td>
-              {{ manufacturer.name }}
+              <a href="{% url 'taxi:manufacturer-detail' pk=manufacturer.id %}">
+                {{ manufacturer.name }}
+              </a>
           </td>
           <td>
               {{ manufacturer.country }}
@@ -51,6 +53,6 @@
     </table>
 
   {% else %}
-      <p>There are no manufacturers in the service.</p>
+      <p>There are no manufacturers yet.</p>
   {% endif %}
 {% endblock %}

@@ -57,6 +57,10 @@ class ManufacturerListView(LoginRequiredMixin, generic.ListView):
             return Manufacturer.objects.filter(name__icontains=form.cleaned_data["name"])
 
 
+class ManufacturerDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Manufacturer
+
+
 class ManufacturerCreateView(LoginRequiredMixin, generic.CreateView):
     model = Manufacturer
     fields = "__all__"

@@ -16,13 +16,14 @@ from .views import (
     ManufacturerCreateView,
     ManufacturerUpdateView,
     ManufacturerDeleteView,
-    toggle_assign_to_car,
+    toggle_assign_to_car, ManufacturerDetailView,
 )
 
 urlpatterns = [
     path("", index, name="index"),
 
     path("manufacturers/", ManufacturerListView.as_view(), name="manufacturer-list"),
+    path("manufacturers/<int:pk>/", ManufacturerDetailView.as_view(), name="manufacturer-detail"),
     path(
         "manufacturers/create/",
         ManufacturerCreateView.as_view(),
