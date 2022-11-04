@@ -3,10 +3,6 @@
 
 {% block content %}
 
-{% if form.errors %}
-  <p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-
 <h1>Login</h1>
 
 {% if next %}
@@ -17,7 +13,7 @@
   {% csrf_token %}
   {{ form|crispy }}
 
-  <input type="submit" value="Login" class="btn btn-primary" />
+  <input type="submit" value="Login" class="btn btn-secondary" />
   <input type="hidden" name="next" value="{{ next }}" />
 </form>
 

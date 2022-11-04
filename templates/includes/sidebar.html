@@ -1,15 +1,14 @@
-<ul class="sidebar-nav list-group">
+<div class="navigation">
+  <span class="nav-elements"><a href="{% url 'taxi:index' %}">Home</a></span>
+  <span class="nav-elements"><a href="{% url 'taxi:driver-list' %}">All drivers</a></span>
+  <span class="nav-elements"><a href="{% url 'taxi:car-list' %}">All cars</a></span>
+  <span class="nav-elements"><a href="{% url 'taxi:manufacturer-list' %}">All manufacturers</a></span>
+
   {% if user.is_authenticated %}
-    <li class="list-group-item">User: <a href="{{ user.get_absolute_url }}">{{ user.get_username }}</a></li>
-    <li class="list-group-item"><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+    <span class="nav-elements"><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></span>
+    <span class="nav-elements">User: <a href="{{ user.get_absolute_url }}">{{ user.get_username }}</a></span>
   {% else %}
-    <li class="list-group-item"><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+    <span class="nav-elements"><a href="{% url 'login'%}?next={{request.path}}">Login</a></span>
   {% endif %}
+</div>
 
-  <br>
-
-  <li class="list-group-item"><a href="{% url 'taxi:index' %}">Home</a></li>
-  <li class="list-group-item"><a href="{% url 'taxi:driver-list' %}">All drivers</a></li>
-  <li class="list-group-item"><a href="{% url 'taxi:car-list' %}">All cars</a></li>
-  <li class="list-group-item"><a href="{% url 'taxi:manufacturer-list' %}">All manufacturers</a></li>
-</ul>

@@ -13,6 +13,6 @@
     {% else %}
       <a href="{% url "taxi:driver-list" %}" class="btn btn-danger">Cancel</a>
     {% endif %}
-    <input type="submit" value="{{ object|yesno:"Update,Create" }}" class="btn btn-primary">
+    <input type="submit" value="{{ object|yesno:"Update,Create" }}" class="btn btn-success">
   </form>
 {% endblock %}

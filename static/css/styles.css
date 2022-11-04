@@ -1,16 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../background/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+hr{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+table, th, td, a{
+    color: white;
+}
+
 .link-to-page {
     float: right;
     margin: 0 2px 0 2px;
 }
 
+.navigation{
+    display: flex;
+    float: right;
+    margin: 15px;
+    padding-top: 25px;
+}
+.nav-elements{
+    margin: 0 25px;
+}
+
 .update{
+    color:green;
+}
+.update:hover{
     color:green;
 }
 
 .delete{
     color:red;
 }
+.delete:hover{
+    color:red;
+}
 
 .logo{
     width: 110px;
+}
+
+.back-btn{
+    font-size: 32px;
+}
+.back-btn:hover{
+    text-decoration: none;
+}
+
+.main-content{
+    padding: 100px 0 0 20px;
+    margin: auto;
+}
+
+h1.index-content {
+    font-size: 64px;
+}
+
+h2.index-content {
+    font-size: 50px;
+}
+
+li.index-content {
+    font-size: 24px;
+}
+
+p.index-content {
+    font-size: 24px;
+}
+
+.pagination-custom {
+    padding-top: 20px;
+    font-size: 21px;
 }
