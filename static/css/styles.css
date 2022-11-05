@@ -50,7 +50,8 @@ table, th, td, a{
 }
 
 .logo{
-    width: 110px;
+    margin: 10px 0 0 23px;
+    width: 85px;
 }
 
 .back-btn{
