@@ -3,7 +3,7 @@
 Django project for managing drivers, cars, and manufacturers.
 
 ## Check it out!
-Project was deployed on [Heroku](https://taxi-service-kevin.herokuapp.com/accounts/login/) (tap to see it).
+Project was deployed on [Render](https://taxi-service-2j2h.onrender.com) (tap to see it).
 
 Guest account credentials:
 * Username: Guest
